@@ -1,0 +1,197 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "colors";
+
+.editor-colors {
+  background-color: @white;
+  color: @gray_dark; }
+
+.editor {
+  font-family: 'Espresso Mono', Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+
+  .invisible-character,
+  .indent-guide { color: @gray_light2; }
+
+  .gutter { background-color: @gutter; }
+
+  .gutter .line-number { opacity: 1; color: @gutter_text; }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after { color: @gutter_text; }
+
+  .cursor { border-color: @cursor; }
+
+  .selection .region {
+    background-color: @selection;
+    // border: 1px solid @light_blue_border;
+    border-radius: 2px; }
+
+  .line-number.cursor-line-no-selection { background-color: @gutter_highlight; }
+
+}
+
+.bracket-matcher {
+  background-color: @light_blue;
+  border-radius: 2px;
+  border: 1px solid @blue;
+}
+
+.comment {
+  color: @comment;
+  font-style: normal; }
+
+.entity { color: @blue_tag; }
+
+.keyword { color: @green; }
+
+.storage.type { color: @green; }
+
+.constant { color: @red;
+
+  &.numeric,
+  &.boolean { color: @cyan; }
+
+}
+
+.variable { color: @blue; }
+
+.delimiter, .brace { color: @black; }
+
+.delimiter.period { color: @green; }
+
+.invalid.deprecated {
+  text-decoration: underline;
+  color: @red; }
+
+.invalid.illegal { color: @red; }
+
+.string { color: @orange;
+
+  .constant.character.escape { color: @red; }
+
+  &.regexp { color: @cyan;
+
+    .source.ruby.embedded,
+    .string.regexp.arbitrary-repitition { color: @red; }
+
+  }
+
+}
+
+// CSS
+
+.css {
+
+  .entity { color: @blue; }
+
+  .property-name { color: @red; }
+
+  .variable { color: @green; }
+
+  .constant,
+  .unit {
+    color: @purple;
+    background-color: @light_purple; }
+
+  .quoted { color: @orange; }
+
+}
+
+// HTML
+.html,
+.xml{
+
+  .tag { color: @blue; }
+
+  .entity { color: @blue_tag;
+
+    &.name { background-color: @light_blue; }
+
+  }
+
+  .comment { color: @comment; }
+
+  .attribute-name { color: @blue; }
+
+  .quoted { color: @red;
+
+    .punctuation { color: @dark_blue; }
+
+  }
+
+  .js .quoted { color: @orange; }
+
+}
+
+// Markdown
+.gfm {
+
+  .link { color: @black; font-weight: bold;
+
+    .entity { color: @orange; font-weight: normal; }
+
+    .link { color: @green; font-weight: normal; }
+
+  }
+
+  .heading {
+    font-weight: bold;
+    color: @black; }
+
+  .list,
+  .hr { color: @red; }
+
+  .quote {
+    font-style: italic;
+    color: @dark_blue; }
+
+  .raw { color: @purple;
+
+    .support {
+      color: @red;
+      font-weight: bold; }
+
+  }
+
+}
+
+// JSON
+.json {
+
+  .punctuation { color: @gray_dark;
+
+    &.separator { color: red; }
+
+  }
+
+  .quoted {
+    color: @dark_blue;
+    background-color: @light_blue; }
+
+  .constant {
+    color: @purple;
+    background-color: @light_purple; }
+
+}
+
+// YAML
+.yaml {
+
+  .entity.name { background-color: @light_blue; }
+
+  .string .punctuation { color: @gray; }
+
+}
+
+// Ruby
+.ruby {
+
+  .entity.name { color: @purple; }
+
+  .string { color: @red; }
+
+}
