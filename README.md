@@ -4,7 +4,11 @@ Fizzy is a light syntax theme for [Atom](http://atom.io/) inspired by [Macrabbit
 
 ### Installation
 
-Clone the git repo into your Atom packages directory: `$ cd ~/.atom/packages/ && git clone https://github.com/buymeasoda/soda-theme.git`
+Run the following command:
+
+```sh
+apm install fizzy
+```
 
 Then go to `Atom > Preferences > Themes` and in the `Syntax Themes` dropdown, select `Fizzy` from the list.
 
