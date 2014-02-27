@@ -7,7 +7,7 @@
   "repository": "https://github.com/jglovier/fizzy",
   "licenses": [
     {
-      "type": "Apache",
+      "type": "MIT",
       "url": "http://github.com/atom/fizzy/raw/master/LICENSE.md"
     }
   ],
