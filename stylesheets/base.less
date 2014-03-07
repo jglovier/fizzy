@@ -95,7 +95,8 @@
   .constant,
   .unit {
     color: @purple;
-    background-color: @light_purple; }
+    background-color: @light_purple;
+    border-radius: 3px; }
 
   .quoted { color: @orange; }
 
@@ -109,7 +110,9 @@
 
   .entity { color: @blue_tag;
 
-    &.name { background-color: @light_blue; }
+    &.name {
+      background-color: @light_blue;
+      border-radius: 3px; }
 
   }
 
@@ -130,11 +133,17 @@
 // Markdown
 .gfm {
 
-  .link { color: @black; font-weight: bold;
+  .link {
+    color: @black;
+    font-weight: bold;
 
-    .entity { color: @orange; font-weight: normal; }
+    .entity {
+      color: @orange;
+      font-weight: normal; }
 
-    .link { color: @green; font-weight: normal; }
+    .link {
+      color: @green;
+      font-weight: normal; }
 
   }
 
@@ -170,11 +179,13 @@
 
   .quoted {
     color: @dark_blue;
-    background-color: @light_blue; }
+    background-color: @light_blue;
+    border-radius: 3px;  }
 
   .constant {
     color: @purple;
-    background-color: @light_purple; }
+    background-color: @light_purple;
+    border-radius: 3px;  }
 
 }
 
@@ -200,10 +211,13 @@
 .erb {
 
   .embedded.erb {
-    color: @green;
-    background-color: @green_light;
+    color: @purple;
+    background-color: @light_purple;
+    border-radius: 3px;
 
-    .variable { color: @green_dark; }
+    .variable { color: @purple_dark; }
+
+    .punctuation { color: @purple; }
 
   }
 
