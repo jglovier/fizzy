@@ -1,7 +1,7 @@
 {
   "name": "fizzy",
   "theme": "syntax",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "private": true,
   "description": "A light-hearted, bright and bubbly syntax theme featuring bright colors, and inspired by the Espresso default highlighting, and the Soda Sublime Text 2 theme.",
   "repository": "https://github.com/jglovier/fizzy",
